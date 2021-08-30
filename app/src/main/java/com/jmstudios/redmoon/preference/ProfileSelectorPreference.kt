@@ -20,12 +20,15 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
 
 import com.jmstudios.redmoon.R
+import com.jmstudios.redmoon.activeProfile
+import com.jmstudios.redmoon.getString
 
+import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.model.Profile
 import com.jmstudios.redmoon.model.Config
 import com.jmstudios.redmoon.model.ProfilesModel
 import com.jmstudios.redmoon.model.ProfilesModel.isSaved
-import com.jmstudios.redmoon.util.*
+import com.jmstudios.redmoon.profilesUpdated
 
 import org.greenrobot.eventbus.Subscribe
 

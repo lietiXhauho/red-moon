@@ -26,10 +26,11 @@
  */
 package com.jmstudios.redmoon.model
 
-import com.jmstudios.redmoon.R
-
-import com.jmstudios.redmoon.schedule.ScheduleReceiver
-import com.jmstudios.redmoon.widget.SwitchAppWidgetProvider
+import com.jmstudios.redmoon.*
+import com.jmstudios.redmoon.helper.EventBus
+import com.jmstudios.redmoon.helper.KLogging
+import com.jmstudios.redmoon.receiver.ScheduleReceiver
+import com.jmstudios.redmoon.SwitchAppWidgetProvider
 import com.jmstudios.redmoon.util.*
 
 import com.luckycatlabs.sunrisesunset.SunriseSunsetCalculator

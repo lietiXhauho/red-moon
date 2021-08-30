@@ -8,9 +8,9 @@ package com.jmstudios.redmoon.model
 import android.graphics.Color
 
 import com.jmstudios.redmoon.R
+import com.jmstudios.redmoon.getString
 
-import com.jmstudios.redmoon.util.EventBus
-import com.jmstudios.redmoon.util.getString
+import com.jmstudios.redmoon.helper.EventBus
 
 import org.json.JSONObject
 

@@ -9,8 +9,11 @@ import android.content.Context
 import android.content.SharedPreferences
 
 import com.jmstudios.redmoon.R
-
-import com.jmstudios.redmoon.util.*
+import com.jmstudios.redmoon.appContext
+import com.jmstudios.redmoon.getString
+import com.jmstudios.redmoon.helper.EventBus
+import com.jmstudios.redmoon.helper.Logger
+import com.jmstudios.redmoon.profilesUpdated
 
 private const val PREFERENCE_NAME = "com.jmstudios.redmoon.PROFILES_PREFERENCE"
 private const val MODE = Context.MODE_PRIVATE

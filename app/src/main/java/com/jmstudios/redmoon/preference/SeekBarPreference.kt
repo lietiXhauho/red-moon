@@ -16,11 +16,11 @@ import android.widget.SeekBar
 import android.widget.TextView
 import androidx.preference.PreferenceViewHolder
 import androidx.preference.Preference
+import com.jmstudios.redmoon.Command
 
 import com.jmstudios.redmoon.R
 
-import com.jmstudios.redmoon.filter.Command
-import com.jmstudios.redmoon.util.Logger
+import com.jmstudios.redmoon.helper.Logger
 
 abstract class SeekBarPreference(context: Context, attrs: AttributeSet) : Preference(context, attrs), SeekBar.OnSeekBarChangeListener {
 
