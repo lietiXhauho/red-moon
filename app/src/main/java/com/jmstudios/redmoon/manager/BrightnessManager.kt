@@ -26,13 +26,12 @@ package com.jmstudios.redmoon.manager
 
 import android.content.Context
 import android.provider.Settings
+import com.jmstudios.redmoon.Config
 import com.jmstudios.redmoon.belowAPI
 import com.jmstudios.redmoon.changeBrightnessDenied
 import com.jmstudios.redmoon.helper.EventBus
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
-
-import com.jmstudios.redmoon.model.Config
 
 class BrightnessManager(private val context: Context) {
     companion object: Logger()

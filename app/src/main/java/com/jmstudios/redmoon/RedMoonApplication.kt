@@ -13,9 +13,6 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.preference.PreferenceManager
 
-import com.jmstudios.redmoon.model.Config
-import com.jmstudios.redmoon.model.Profile
-import com.jmstudios.redmoon.model.ProfilesModel
 import com.jmstudios.redmoon.receiver.ScheduleReceiver
 
 import org.json.JSONObject

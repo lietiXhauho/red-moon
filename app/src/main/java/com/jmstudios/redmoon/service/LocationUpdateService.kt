@@ -39,7 +39,7 @@ import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
 import com.jmstudios.redmoon.locationAccessDenied
 import com.jmstudios.redmoon.locationService
-import com.jmstudios.redmoon.model.Config
+import com.jmstudios.redmoon.Config
 
 import org.greenrobot.eventbus.EventBus
 import java.util.concurrent.TimeUnit

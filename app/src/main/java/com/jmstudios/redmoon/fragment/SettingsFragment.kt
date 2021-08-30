@@ -18,9 +18,8 @@ import com.jmstudios.redmoon.*
 import com.jmstudios.redmoon.helper.EventBus
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
-import com.jmstudios.redmoon.model.Config
+import com.jmstudios.redmoon.Config
 import com.jmstudios.redmoon.service.LocationUpdateService
-import com.jmstudios.redmoon.util.*
 
 import org.greenrobot.eventbus.Subscribe
 import org.libreshift.preferences.TimePreference

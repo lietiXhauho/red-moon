@@ -5,8 +5,6 @@
  */
 package com.jmstudios.redmoon
 
-import com.jmstudios.redmoon.model.Profile
-
 interface Filter {
     fun onCreate()
     fun onDestroy()

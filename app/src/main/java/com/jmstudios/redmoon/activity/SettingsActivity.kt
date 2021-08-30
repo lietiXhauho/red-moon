@@ -13,7 +13,6 @@ import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.R
 import com.jmstudios.redmoon.fragment.SettingsFragment
 import com.jmstudios.redmoon.helper.Permission
-import com.jmstudios.redmoon.util.*
 
 class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

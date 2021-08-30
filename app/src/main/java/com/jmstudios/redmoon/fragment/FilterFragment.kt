@@ -34,7 +34,7 @@ import com.jmstudios.redmoon.helper.EventBus
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
 
-import com.jmstudios.redmoon.model.Profile
+import com.jmstudios.redmoon.Profile
 import com.jmstudios.redmoon.pref
 import com.jmstudios.redmoon.preference.SeekBarPreference
 

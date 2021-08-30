@@ -10,7 +10,7 @@ import android.content.Context
 import android.content.Intent
 import com.jmstudios.redmoon.activeProfile
 
-import com.jmstudios.redmoon.model.ProfilesModel
+import com.jmstudios.redmoon.ProfilesModel
 import com.jmstudios.redmoon.helper.Logger
 
 class NextProfileCommandReceiver : BroadcastReceiver() {

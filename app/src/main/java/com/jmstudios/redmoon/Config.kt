@@ -24,14 +24,13 @@
  *     NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
  *     CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-package com.jmstudios.redmoon.model
+package com.jmstudios.redmoon
 
 import com.jmstudios.redmoon.*
 import com.jmstudios.redmoon.helper.EventBus
 import com.jmstudios.redmoon.helper.KLogging
 import com.jmstudios.redmoon.receiver.ScheduleReceiver
 import com.jmstudios.redmoon.SwitchAppWidgetProvider
-import com.jmstudios.redmoon.util.*
 
 import com.luckycatlabs.sunrisesunset.SunriseSunsetCalculator
 

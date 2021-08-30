@@ -16,7 +16,7 @@ import com.jmstudios.redmoon.Command
 import com.jmstudios.redmoon.appContext
 
 import com.jmstudios.redmoon.helper.Logger
-import com.jmstudios.redmoon.model.Config
+import com.jmstudios.redmoon.Config
 import com.jmstudios.redmoon.service.LocationUpdateService
 
 import java.util.Calendar

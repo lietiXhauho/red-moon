@@ -14,8 +14,6 @@ import android.content.Context
 import android.content.ContextWrapper
 import com.jmstudios.redmoon.App
 
-import com.jmstudios.redmoon.util.*
-
 class CurrentAppChecker(private val context: Context) {
 
     val isWorking: Boolean = getCurrentApp(App("", "")) != App("", "")

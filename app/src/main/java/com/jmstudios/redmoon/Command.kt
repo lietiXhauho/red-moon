@@ -12,7 +12,6 @@ import android.os.Build
 
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.service.FilterService
-import com.jmstudios.redmoon.util.*
 
 private const val DURATION_LONG = 1000f // One second
 private const val DURATION_SHORT = 250f

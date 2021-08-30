@@ -15,8 +15,6 @@ import com.jmstudios.redmoon.R
 
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
-import com.jmstudios.redmoon.model.Config
-import com.jmstudios.redmoon.util.*
 
 abstract class ThemedAppCompatActivity : AppCompatActivity() {
 

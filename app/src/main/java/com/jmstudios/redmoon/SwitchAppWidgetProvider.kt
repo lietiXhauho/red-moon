@@ -34,7 +34,6 @@ import android.content.Intent
 import android.widget.RemoteViews
 
 import com.jmstudios.redmoon.helper.Logger
-import com.jmstudios.redmoon.util.*
 
 class SwitchAppWidgetProvider : AppWidgetProvider() {
 

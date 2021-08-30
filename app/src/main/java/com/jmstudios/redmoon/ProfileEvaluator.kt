@@ -8,8 +8,6 @@ import android.animation.ArgbEvaluator
 import android.animation.IntEvaluator
 import android.animation.TypeEvaluator
 
-import com.jmstudios.redmoon.model.Profile
-
 class ProfileEvaluator : TypeEvaluator<Profile> {
     private val intEval  = IntEvaluator()
     private val argbEval = ArgbEvaluator()

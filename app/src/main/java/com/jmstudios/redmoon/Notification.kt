@@ -19,7 +19,6 @@ import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.manager.CurrentAppMonitor
 import com.jmstudios.redmoon.receiver.NextProfileCommandReceiver
 import com.jmstudios.redmoon.receiver.WhitelistChangeReceiver
-import com.jmstudios.redmoon.util.*
 
 class Notification(
         private val context: Context,

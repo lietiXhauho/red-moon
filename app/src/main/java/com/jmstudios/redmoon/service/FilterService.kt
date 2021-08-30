@@ -34,10 +34,7 @@ import com.jmstudios.redmoon.*
 import com.jmstudios.redmoon.helper.EventBus
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
-import com.jmstudios.redmoon.model.Config
-import com.jmstudios.redmoon.model.Profile
 import com.jmstudios.redmoon.manager.CurrentAppMonitor
-import com.jmstudios.redmoon.util.*
 
 import java.util.concurrent.Executors
 

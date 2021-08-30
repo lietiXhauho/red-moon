@@ -6,7 +6,6 @@ package com.jmstudios.redmoon
 
 import com.jmstudios.redmoon.App
 import com.jmstudios.redmoon.helper.KLogging
-import com.jmstudios.redmoon.util.*
 
 import me.smichel.android.KPreferences.Preferences
 

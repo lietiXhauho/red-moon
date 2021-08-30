@@ -29,7 +29,7 @@ import android.content.Context
 import android.content.Intent
 import com.jmstudios.redmoon.Command
 
-import com.jmstudios.redmoon.model.Config
+import com.jmstudios.redmoon.Config
 import com.jmstudios.redmoon.manager.BrightnessManager
 import com.jmstudios.redmoon.helper.KLog
 import com.jmstudios.redmoon.helper.Logger

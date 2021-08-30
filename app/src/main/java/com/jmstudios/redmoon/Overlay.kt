@@ -33,10 +33,7 @@ import com.jmstudios.redmoon.helper.EventBus
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.manager.BrightnessManager
 import com.jmstudios.redmoon.manager.ScreenManager
-import com.jmstudios.redmoon.model.Config
-import com.jmstudios.redmoon.model.Profile
 import com.jmstudios.redmoon.receiver.OrientationChangeReceiver
-import com.jmstudios.redmoon.util.*
 
 import kotlin.properties.Delegates
 

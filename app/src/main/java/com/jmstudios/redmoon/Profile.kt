@@ -3,9 +3,10 @@
  * Copyright (c) 2017 Stephen Michel <s@smichel.me>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-package com.jmstudios.redmoon.model
+package com.jmstudios.redmoon
 
 import android.graphics.Color
+import com.jmstudios.redmoon.ProfilesModel
 
 import com.jmstudios.redmoon.R
 import com.jmstudios.redmoon.getString

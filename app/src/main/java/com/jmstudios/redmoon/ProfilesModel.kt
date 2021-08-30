@@ -3,17 +3,13 @@
  * Copyright (c) 2017 Stephen Michel <s@smichel.me>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-package com.jmstudios.redmoon.model
+package com.jmstudios.redmoon
 
 import android.content.Context
 import android.content.SharedPreferences
 
-import com.jmstudios.redmoon.R
-import com.jmstudios.redmoon.appContext
-import com.jmstudios.redmoon.getString
 import com.jmstudios.redmoon.helper.EventBus
 import com.jmstudios.redmoon.helper.Logger
-import com.jmstudios.redmoon.profilesUpdated
 
 private const val PREFERENCE_NAME = "com.jmstudios.redmoon.PROFILES_PREFERENCE"
 private const val MODE = Context.MODE_PRIVATE
