@@ -110,14 +110,14 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.jmstudios.redmoon.BootReceiver">
+        <receiver android:name="com.jmstudios.redmoon.receiver.BootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name="com.jmstudios.redmoon.TimeZoneChangeReceiver">
+        <receiver android:name="com.jmstudios.redmoon.receiver.TimeZoneChangeReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
             </intent-filter>
