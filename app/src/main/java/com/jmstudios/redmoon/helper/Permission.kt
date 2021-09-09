@@ -14,17 +14,18 @@ import android.provider.Settings
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.appcompat.app.AlertDialog
-import com.jmstudios.redmoon.EventBus
 
-import com.jmstudios.redmoon.R
 import com.jmstudios.redmoon.appContext
 import com.jmstudios.redmoon.atLeastAPI
+import com.jmstudios.redmoon.Event
+import com.jmstudios.redmoon.EventBus
+import com.jmstudios.redmoon.R
 
 private const val REQ_CODE_OVERLAY  = 1111
 private const val REQ_CODE_LOCATION = 2222
 private const val REQ_CODE_SETTINGS = 3333
 
-abstract class PermissionHelper : EventBus.Event {
+abstract class PermissionHelper : Event {
     abstract val isGranted: Boolean
     protected abstract val requestCode: Int
     protected abstract fun send(activity: Activity)

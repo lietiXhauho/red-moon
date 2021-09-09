@@ -77,7 +77,7 @@
     <string name="time_toggle_options_array_2">Automatinis (pasirinktinis)</string>
     <string name="activity_main">Red Moon</string>
     <!-- Currently unused -->
-    <string name="add_new_profile_dialog_title">Įvesti profilio pavadinimo</string>
+    <string name="add_new_profile_dialog_title">Įvesti profilio pavadinimą</string>
     <string name="add_new_profile_edit_hint">Profilio pavadinimas</string>
     <string name="remove_profile_dialog_title">Ištrinti šį profilį?</string>
     <string name="pref_title_appearance">Profilis</string>

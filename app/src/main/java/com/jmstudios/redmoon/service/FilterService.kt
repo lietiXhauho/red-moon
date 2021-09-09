@@ -29,14 +29,25 @@ import android.animation.ValueAnimator
 import android.app.Service
 import android.content.Intent
 import android.os.IBinder
-import com.jmstudios.redmoon.*
+import java.util.concurrent.Executors
+import com.jmstudios.redmoon.Command
+import com.jmstudios.redmoon.CommandAnimatorListener
+import com.jmstudios.redmoon.Config
 
+import com.jmstudios.redmoon.activeProfile
 import com.jmstudios.redmoon.EventBus
+import com.jmstudios.redmoon.Filter
+import com.jmstudios.redmoon.filterIsOn
+import com.jmstudios.redmoon.filter.surfaceflinger.SurfaceFlinger
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
 import com.jmstudios.redmoon.manager.CurrentAppMonitor
-
-import java.util.concurrent.Executors
+import com.jmstudios.redmoon.Notification
+import com.jmstudios.redmoon.Overlay
+import com.jmstudios.redmoon.overlayPermissionDenied
+import com.jmstudios.redmoon.Profile
+import com.jmstudios.redmoon.ProfileEvaluator
+import com.jmstudios.redmoon.secureSuspendChanged
 
 import org.greenrobot.eventbus.Subscribe
 
@@ -51,7 +62,13 @@ class FilterService : Service() {
     override fun onCreate() {
         super.onCreate()
         Log.i("onCreate")
-        mFilter = Overlay(this)
+        if (Config.useRoot) {
+            Log.i("Starting in root mode")
+            mFilter = SurfaceFlinger()
+        } else {
+            Log.i("Starting in overlay mode")
+            mFilter = Overlay(this)
+        }
         mCurrentAppMonitor = CurrentAppMonitor(this, executor)
         mNotification = Notification(this, mCurrentAppMonitor)
         mAnimator = ValueAnimator.ofObject(ProfileEvaluator(), mFilter.profile).apply {
@@ -63,7 +80,7 @@ class FilterService : Service() {
 
     override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
         Log.i("onStartCommand($intent, $flags, $startId)")
-        if (Permission.Overlay.isGranted) {
+        if (Permission.Overlay.isGranted || Config.useRoot) {
             val cmd = Command.getCommand(intent)
             val end = if (cmd.turnOn) activeProfile else mFilter.profile.off
             mAnimator.run {

@@ -77,7 +77,7 @@ class FilterFragment : PreferenceFragmentCompat() {
     override fun onStart() {
         Log.i("onStart")
         super.onStart()
-        preferenceScreen.setEnabled(Permission.Overlay.isGranted)
+        preferenceScreen.setEnabled(Permission.Overlay.isGranted || Config.useRoot)
         EventBus.register(profileSelectorPref)
         EventBus.register(this)
     }

@@ -13,17 +13,28 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreference
 import com.google.android.material.snackbar.Snackbar
-import com.jmstudios.redmoon.*
+import com.jmstudios.redmoon.Command
 
+import com.jmstudios.redmoon.Config
 import com.jmstudios.redmoon.EventBus
+import com.jmstudios.redmoon.getColor
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
-import com.jmstudios.redmoon.Config
+import com.jmstudios.redmoon.inActivePeriod
+import com.jmstudios.redmoon.locationAccessDenied
+import com.jmstudios.redmoon.locationChanged
+import com.jmstudios.redmoon.locationService
+import com.jmstudios.redmoon.pref
+import com.jmstudios.redmoon.R
+import com.jmstudios.redmoon.scheduleChanged
 import com.jmstudios.redmoon.service.LocationUpdateService
+import com.jmstudios.redmoon.useLocationChanged
 
+import com.topjohnwu.superuser.Shell
 import org.greenrobot.eventbus.Subscribe
 import org.libreshift.preferences.TimePreference
 import org.libreshift.preferences.TimePreferenceDialogFragmentCompat
+
 
 class SettingsFragment : PreferenceFragmentCompat() {
     private val automaticTurnOnPref: TimePreference
@@ -40,6 +51,9 @@ class SettingsFragment : PreferenceFragmentCompat() {
 
     private val themePref: SwitchPreference
         get() = pref(R.string.pref_key_dark_theme) as SwitchPreference
+
+    private val rootPref: SwitchPreference
+        get() = pref(R.string.pref_key_use_root) as SwitchPreference
 
     private var mSnackbar: Snackbar? = null
 
@@ -95,6 +109,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
         updatePrefs()
         EventBus.register(this)
         LocationUpdateService.update()
+        rootPref.isVisible = Shell.rootAccess()
     }
 
     override fun onStop() {
