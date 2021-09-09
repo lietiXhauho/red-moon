@@ -10,8 +10,6 @@ import android.app.Activity
 import android.app.Dialog
 import androidx.appcompat.app.AlertDialog
 
-import com.jmstudios.redmoon.model.Config
-
 import java.io.BufferedReader
 import java.io.InputStreamReader
 

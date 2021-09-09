@@ -9,9 +9,9 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 
+import com.jmstudios.redmoon.activity.MainActivity
+import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.R
-import com.jmstudios.redmoon.MainActivity
-import com.jmstudios.redmoon.util.Logger
 
 class ShortcutCreationActivity : Activity() {
 

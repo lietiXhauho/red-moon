@@ -9,9 +9,6 @@ import androidx.fragment.app.Fragment
 
 import com.github.paolorotolo.appintro.AppIntro2
 import com.github.paolorotolo.appintro.AppIntroFragment
-
-import com.jmstudios.redmoon.R
-import com.jmstudios.redmoon.model.Config
 import com.topjohnwu.superuser.Shell
 
 class Intro : AppIntro2() {

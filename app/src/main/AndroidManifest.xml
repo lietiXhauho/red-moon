@@ -65,7 +65,7 @@
             android:theme="@style/AppThemeIntro" />
 
         <activity
-            android:name="com.jmstudios.redmoon.MainActivity"
+            android:name="com.jmstudios.redmoon.activity.MainActivity"
             android:label="@string/activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -81,23 +81,23 @@
         </activity>
 
         <activity
-            android:name=".settings.SettingsActivity"
+            android:name=".activity.SettingsActivity"
             android:label="@string/activity_settings"
             android:theme="@style/AppTheme">
             <!-- When we bump minsdk<=17, replace meta-data (here and below) with: -->
             <!-- android:parentActivityName=".MainActivity" -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activity.MainActivity" />
         </activity>
 
         <activity
-            android:name=".AboutActivity"
+            android:name=".activity.AboutActivity"
             android:label="@string/activity_about"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activity.MainActivity" />
         </activity>
 
         <activity
@@ -110,14 +110,14 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.jmstudios.redmoon.BootReceiver">
+        <receiver android:name="com.jmstudios.redmoon.receiver.BootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name="com.jmstudios.redmoon.TimeZoneChangeReceiver">
+        <receiver android:name="com.jmstudios.redmoon.receiver.TimeZoneChangeReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
             </intent-filter>
@@ -132,12 +132,12 @@
                 android:resource="@xml/switch_appwidget_info" />
         </receiver>
 
-        <receiver android:name=".schedule.ScheduleReceiver" />
-        <receiver android:name=".filter.NextProfileCommandReceiver" />
-        <receiver android:name=".securesuspend.WhitelistChangeReceiver" />
+        <receiver android:name=".receiver.ScheduleReceiver" />
+        <receiver android:name=".receiver.NextProfileCommandReceiver" />
+        <receiver android:name=".receiver.WhitelistChangeReceiver" />
 
-        <service android:name=".schedule.LocationUpdateService" />
-        <service android:name=".filter.FilterService" />
+        <service android:name=".service.LocationUpdateService" />
+        <service android:name=".service.FilterService" />
 
         <service
             android:name=".widget.TileReceiver"

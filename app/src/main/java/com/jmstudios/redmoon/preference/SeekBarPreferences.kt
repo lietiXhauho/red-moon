@@ -9,8 +9,8 @@ import android.content.Context
 import android.graphics.Color
 import android.util.AttributeSet
 
-import com.jmstudios.redmoon.model.Profile
-import com.jmstudios.redmoon.model.Config
+import com.jmstudios.redmoon.Profile
+import com.jmstudios.redmoon.Config
 
 class ColorSeekBarPreference(context: Context, attrs: AttributeSet) : SeekBarPreference(context, attrs) {
 
