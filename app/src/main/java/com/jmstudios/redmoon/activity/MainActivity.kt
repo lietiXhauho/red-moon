@@ -33,6 +33,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.jmstudios.redmoon.*
 
 import com.jmstudios.redmoon.fragment.FilterFragment
+import com.jmstudios.redmoon.Event
 import com.jmstudios.redmoon.EventBus
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
@@ -42,7 +43,7 @@ import org.greenrobot.eventbus.Subscribe
 
 class MainActivity : ThemedAppCompatActivity() {
 
-    data class UI(val isOpen: Boolean) : EventBus.Event
+    data class UI(val isOpen: Boolean) : Event
 
     companion object : Logger() {
         const val EXTRA_FROM_SHORTCUT_BOOL = "com.jmstudios.redmoon.activity.MainActivity.EXTRA_FROM_SHORTCUT_BOOL"

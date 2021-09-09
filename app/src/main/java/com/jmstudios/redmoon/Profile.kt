@@ -29,7 +29,7 @@ data class Profile(
         val intensity: Int,
         val dimLevel: Int,
         val lowerBrightness: Boolean)
-    : EventBus.Event, Comparable<Profile> {
+    : Event, Comparable<Profile> {
 
     override fun toString() = JSONObject().run {
         put(KEY_COLOR, color    )

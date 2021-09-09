@@ -29,14 +29,14 @@ import androidx.preference.TwoStatePreference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.Preference
 
-import com.jmstudios.redmoon.R
+import com.jmstudios.redmoon.Config
 import com.jmstudios.redmoon.EventBus
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
-
-import com.jmstudios.redmoon.Profile
 import com.jmstudios.redmoon.pref
 import com.jmstudios.redmoon.preference.SeekBarPreference
+import com.jmstudios.redmoon.Profile
+import com.jmstudios.redmoon.R
 
 import org.greenrobot.eventbus.Subscribe
 
