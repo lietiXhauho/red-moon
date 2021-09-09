@@ -31,7 +31,7 @@ import android.content.Intent
 import android.os.IBinder
 import com.jmstudios.redmoon.*
 
-import com.jmstudios.redmoon.helper.EventBus
+import com.jmstudios.redmoon.EventBus
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
 import com.jmstudios.redmoon.manager.CurrentAppMonitor

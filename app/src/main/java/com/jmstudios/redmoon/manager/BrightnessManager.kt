@@ -29,7 +29,7 @@ import android.provider.Settings
 import com.jmstudios.redmoon.Config
 import com.jmstudios.redmoon.belowAPI
 import com.jmstudios.redmoon.changeBrightnessDenied
-import com.jmstudios.redmoon.helper.EventBus
+import com.jmstudios.redmoon.EventBus
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
 

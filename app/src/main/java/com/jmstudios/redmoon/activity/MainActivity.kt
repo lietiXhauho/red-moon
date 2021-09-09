@@ -33,7 +33,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.jmstudios.redmoon.*
 
 import com.jmstudios.redmoon.fragment.FilterFragment
-import com.jmstudios.redmoon.helper.EventBus
+import com.jmstudios.redmoon.EventBus
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
 import com.jmstudios.redmoon.ProfilesModel

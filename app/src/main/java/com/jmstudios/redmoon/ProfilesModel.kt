@@ -8,7 +8,6 @@ package com.jmstudios.redmoon
 import android.content.Context
 import android.content.SharedPreferences
 
-import com.jmstudios.redmoon.helper.EventBus
 import com.jmstudios.redmoon.helper.Logger
 
 private const val PREFERENCE_NAME = "com.jmstudios.redmoon.PROFILES_PREFERENCE"

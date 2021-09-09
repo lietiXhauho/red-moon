@@ -29,7 +29,6 @@ import androidx.preference.Preference
 import androidx.core.content.ContextCompat
 import androidx.preference.PreferenceFragmentCompat
 
-import com.jmstudios.redmoon.helper.EventBus
 import com.jmstudios.redmoon.helper.KLog
 import com.jmstudios.redmoon.helper.KLogging
 

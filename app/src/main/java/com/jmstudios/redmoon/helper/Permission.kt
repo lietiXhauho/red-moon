@@ -14,6 +14,7 @@ import android.provider.Settings
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.appcompat.app.AlertDialog
+import com.jmstudios.redmoon.EventBus
 
 import com.jmstudios.redmoon.R
 import com.jmstudios.redmoon.appContext

@@ -26,8 +26,6 @@
  */
 package com.jmstudios.redmoon
 
-import com.jmstudios.redmoon.*
-import com.jmstudios.redmoon.helper.EventBus
 import com.jmstudios.redmoon.helper.KLogging
 import com.jmstudios.redmoon.receiver.ScheduleReceiver
 import com.jmstudios.redmoon.widget.SwitchAppWidgetProvider

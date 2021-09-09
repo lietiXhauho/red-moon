@@ -29,7 +29,6 @@ import android.graphics.Canvas
 import android.view.View
 import android.view.WindowManager
 
-import com.jmstudios.redmoon.helper.EventBus
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.manager.BrightnessManager
 import com.jmstudios.redmoon.manager.ScreenManager

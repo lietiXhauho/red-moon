@@ -5,7 +5,25 @@
 
 package com.jmstudios.redmoon
 
-import com.jmstudios.redmoon.helper.EventBus.Event
+import kotlin.reflect.KClass
+
+import org.greenrobot.eventbus.EventBus
+
+object EventBus {
+    private val bus: EventBus
+        get() = EventBus.getDefault()
+
+    fun register  (subscriber: Any) = bus.register  (subscriber)
+    fun unregister(subscriber: Any) = bus.unregister(subscriber)
+
+    fun post        (event: Event) = bus.post             (event)
+    fun postSticky  (event: Event) = bus.postSticky       (event)
+    fun removeSticky(event: Event) = bus.removeStickyEvent(event)
+
+    fun <T: Event>getSticky(eventClass: KClass<T>): T? = bus.getStickyEvent(eventClass.java)
+}
+
+interface Event
 
 class filterIsOnChanged        : Event
 //class themeChanged             : Event

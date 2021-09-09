@@ -30,7 +30,7 @@ import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.Preference
 
 import com.jmstudios.redmoon.R
-import com.jmstudios.redmoon.helper.EventBus
+import com.jmstudios.redmoon.EventBus
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
 

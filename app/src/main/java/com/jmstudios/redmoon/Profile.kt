@@ -6,12 +6,6 @@
 package com.jmstudios.redmoon
 
 import android.graphics.Color
-import com.jmstudios.redmoon.ProfilesModel
-
-import com.jmstudios.redmoon.R
-import com.jmstudios.redmoon.getString
-
-import com.jmstudios.redmoon.helper.EventBus
 
 import org.json.JSONObject
 
