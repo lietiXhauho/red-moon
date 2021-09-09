@@ -3,14 +3,15 @@
  * Copyright (c) 2017  Stephen Michel <s@smichel.me>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-package com.jmstudios.redmoon.activity
+package com.jmstudios.redmoon.widget
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 
-import com.jmstudios.redmoon.R
+import com.jmstudios.redmoon.activity.MainActivity
 import com.jmstudios.redmoon.helper.Logger
+import com.jmstudios.redmoon.R
 
 class ShortcutCreationActivity : Activity() {
 

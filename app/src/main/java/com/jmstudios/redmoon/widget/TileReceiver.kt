@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package com.jmstudios.redmoon.receiver
+package com.jmstudios.redmoon.widget
 
 import android.annotation.TargetApi
 import android.service.quicksettings.Tile

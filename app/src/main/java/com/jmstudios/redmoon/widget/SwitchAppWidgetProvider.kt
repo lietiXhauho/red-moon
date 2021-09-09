@@ -23,7 +23,7 @@
  *     CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package com.jmstudios.redmoon
+package com.jmstudios.redmoon.widget
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -33,7 +33,10 @@ import android.content.Context
 import android.content.Intent
 import android.widget.RemoteViews
 
+import com.jmstudios.redmoon.Command
+import com.jmstudios.redmoon.filterIsOn
 import com.jmstudios.redmoon.helper.Logger
+import com.jmstudios.redmoon.R
 
 class SwitchAppWidgetProvider : AppWidgetProvider() {
 
