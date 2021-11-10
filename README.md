@@ -1,3 +1,9 @@
+## Low Maintenance Mode
+
+Red Moon is currently maintained to the level of "works on my device". Pull Requests are still accepted and if you're interested in becoming a co-maintainer, I'm willing to spend time walking you through the code base. [**Read More**](https://github.com/LibreShift/red-moon/issues/281)
+
+---
+
 <img alt="Red Moon Icon" align="right" height="256" src="https://lut.im/3IqLwsAZWH/piFLRMOgNLWmiqB8.png">
 
 # Red Moon<br/>[![Translation status](https://hosted.weblate.org/widgets/red-moon/-/svg-badge.svg)](https://hosted.weblate.org/engage/red-moon/?utm_source=widget) [![License](https://img.shields.io/badge/license-GPL--3.0%2B-bd0000.svg)](COPYING "License: GPL-3.0-or-later") [![Commits (since latest release)](https://img.shields.io/github/commits-since/LibreShift/red-moon/latest.svg "Commits since latest release")](https://github.com/LibreShift/red-moon/releases/latest)
@@ -35,11 +41,7 @@ other parts of their life. That's where you come in! You can:
 <img src="https://hosted.weblate.org/widgets/red-moon/-/horizontal-auto.svg" alt="Translation status" />
 </a>
 
-## Looking for co-maintainers
 
-Red Moon is still maintained, and I have no plans to change that. I would actually like to do more development and get Red Moon feature-complete. However, it is hard for me to get motivated to do that when I'm the only developer (especially when there are [other](https://snowdrift.coop) projects I'm involved in that *do* have others working on them).
-
-If you're interested in becoming a co-maintainer, I'm willing to spend time walking you through the code base.
 
 ## Screenshots
 
