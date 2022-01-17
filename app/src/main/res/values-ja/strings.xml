@@ -69,8 +69,8 @@
 \n
 \n※いらないアプリを騙してインストールさせるような一部アプリは、干渉から守るためオーバーレイに対し保護されます。Red Moonはオンの時、透明な赤色レイヤーを画面上に描画して動作しているため、このようなアプリはタッチに応答しません。</string>
     <string name="dialog_message_permission_usage_stats">次の画面で使用状況へのアクセスを許可して、Red Moon がセキュリティで保護されたアプリを一時停止できるようにします。
-
-        Red Moon がオンのときに作動しないと思われるアプリを使用しているかどうかを確認するためだけに、このデータを使用します。</string>
+\n
+\nRed Moon がオンのときに作動しないと思われるアプリを使用しているかどうかを確認するためだけに、このデータを使用します。</string>
     <string name="activity_secure_suspend">除外したアプリで一時停止</string>
     <string name="pref_title_secure_suspend">除外したアプリで一時停止</string>
     <string name="dialog_title_permission_usage_stats">使用状況へのアクセス</string>
@@ -89,8 +89,8 @@
     <string name="pref_title_integration">他のアプリと統合</string>
     <string name="pref_title_version">バージョン</string>
     <string name="pref_summary_integration">LibreTasks や Tasker のような一部のアプリでは、特定のイベントが発生したときに、タスクを自動化することができます。Red Moon はオンまたはオフになったときに、それらのアプリが応答できるように公開の通知を送信します。使用しない、またはこれらのアプリを開発する場合、次のパラグラフを無視することができます。
-
-        Red Moon は、アクション \'com.jmstudios.redmoon.RED_MOON_TOGGLED\' で公開インテントをブロードキャストします。インテントには、Red Moon がオンまたはオフに切り替えられているかどうかを示すブール値の拡張がキー \'jmstudios.bundle.key.FILTER_IS_ON\' で含まれます。</string>
+\n
+\nRed Moon は、アクション \'com.jmstudios.redmoon.RED_MOON_TOGGLED\' で公開インテントをブロードキャストします。インテントには、Red Moon がオンまたはオフに切り替えられているかどうかを示すブール値の拡張がキー \'jmstudios.bundle.key.FILTER_IS_ON\' で含まれます。</string>
     <!-- Currently unused -->
     <string name="add_new_profile_dialog_title">プロファイル名を入力してください</string>
     <string name="add_new_profile_edit_hint">プロファイル名</string>
@@ -132,4 +132,5 @@
     <string name="pref_value_start_time_sunset">日没</string>
     <string name="menu_settings">設定</string>
     <string name="activity_settings">設定</string>
+    <string name="pref_title_use_root">rootを使用</string>
 </resources>
