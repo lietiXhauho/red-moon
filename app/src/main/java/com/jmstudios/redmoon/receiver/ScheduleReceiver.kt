@@ -5,12 +5,15 @@
  */
 package com.jmstudios.redmoon.receiver
 
+import android.annotation.SuppressLint
 import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import android.os.Build
+import android.provider.Settings
 import androidx.core.app.AlarmManagerCompat
 import com.jmstudios.redmoon.Command
 import com.jmstudios.redmoon.appContext
@@ -23,7 +26,6 @@ import java.util.Calendar
 import java.util.GregorianCalendar
 
 class ScheduleReceiver : BroadcastReceiver() {
-
     override fun onReceive(context: Context, intent: Intent) {
         Log.i("Alarm received")
 
@@ -57,6 +59,7 @@ class ScheduleReceiver : BroadcastReceiver() {
             cancelAlarm(false)
         }
 
+        @SuppressLint("UnspecifiedImmutableFlag")
         private fun scheduleNextCommand(turnOn: Boolean) {
             if (Config.scheduleOn) {
                 Log.d("Scheduling alarm to turn filter ${if (turnOn) "on" else "off"}")
@@ -82,8 +85,18 @@ class ScheduleReceiver : BroadcastReceiver() {
 
                 Log.i("Scheduling alarm for " + calendar.toString())
 
-                val pendingIntent = PendingIntent.getBroadcast(appContext, 0, command, 0)
+                val pendingIntent =
+                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                        PendingIntent.getBroadcast(appContext, 0, command, PendingIntent.FLAG_IMMUTABLE)
+                    else
+                        PendingIntent.getBroadcast(appContext, 0, command, 0)
 
+                if(
+                    Build.VERSION.SDK_INT >= Build.VERSION_CODES.S &&
+                    !(appContext.getSystemService(Context.ALARM_SERVICE) as AlarmManager).canScheduleExactAlarms()
+                ) {
+                    appContext.startActivity(Intent().apply { action = Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM })
+                }
                 AlarmManagerCompat.setExactAndAllowWhileIdle(alarmManager, AlarmManager.RTC,
                                                         calendar.timeInMillis, pendingIntent)
             } else {
@@ -91,12 +104,17 @@ class ScheduleReceiver : BroadcastReceiver() {
             }
         }
 
+        @SuppressLint("UnspecifiedImmutableFlag")
         private fun cancelAlarm(turnOn: Boolean) {
             Log.d("Canceling alarm to turn filter ${if (turnOn) "on" else "off"}")
             val command = intent.apply {
                 data = Uri.parse(if (turnOn) "turnOnIntent" else "offIntent")
             }
-            val pendingIntent = PendingIntent.getBroadcast(appContext, 0, command, 0)
+            val pendingIntent =
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                    PendingIntent.getBroadcast(appContext, 0, command, PendingIntent.FLAG_IMMUTABLE)
+                else
+                    PendingIntent.getBroadcast(appContext, 0, command, 0)
             alarmManager.cancel(pendingIntent)
         }
     }

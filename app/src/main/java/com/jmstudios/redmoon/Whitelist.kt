@@ -4,10 +4,7 @@
  */
 package com.jmstudios.redmoon
 
-import com.jmstudios.redmoon.App
 import com.jmstudios.redmoon.helper.KLogging
-
-import me.smichel.android.KPreferences.Preferences
 
 private const val WHITELIST_PREF: String = "com.jmstudios.redmoon.WHITELIST"
 
