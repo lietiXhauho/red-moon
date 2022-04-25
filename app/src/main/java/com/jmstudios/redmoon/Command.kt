@@ -20,12 +20,14 @@ private const val DURATION_INSTANT = 0f
 enum class Command(val time: Float) {
     ON(DURATION_LONG) {
         override val turnOn: Boolean = true
+        override val foreground = true
         override fun onAnimationStart(service: FilterService) {
             service.start(true)
         }
     },
     OFF(DURATION_LONG) {
         override val turnOn: Boolean = false
+        override val foreground = false
         override fun onAnimationStart(service: FilterService) {
             service.stopForeground(true)
         }
@@ -35,18 +37,22 @@ enum class Command(val time: Float) {
     },
     PAUSE(DURATION_SHORT) {
         override val turnOn: Boolean = false
+        override val foreground = true
         override fun onAnimationStart(service: FilterService) {
             service.start(false)
         }
     },
     RESUME(DURATION_SHORT) {
         override val turnOn: Boolean = true
+        override val foreground = true
         override fun onAnimationStart(service: FilterService) {
             service.start(true)
         }
     },
     SHOW_PREVIEW(DURATION_INSTANT) {
         override val turnOn: Boolean = true
+        override val foreground = true
+
         override fun onAnimationStart(service: FilterService) {
             if (filterWasOn == null) {
                 filterWasOn = filterIsOn
@@ -57,6 +63,7 @@ enum class Command(val time: Float) {
     HIDE_PREVIEW(DURATION_INSTANT) {
         override val turnOn: Boolean
             get() = filterWasOn == true
+        override val foreground = false
 
         override fun onAnimationEnd(service: FilterService) {
             if (filterWasOn != true) {
@@ -76,7 +83,7 @@ enum class Command(val time: Float) {
         // is started from foreground anyways but there are exceptions: for
         // instance when launched from a quick setting tile.
         // See https://developer.android.com/about/versions/oreo/background
-        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && this.foreground) {
             appContext.startForegroundService(intent)
         } else {
             appContext.startService(intent)
@@ -84,8 +91,7 @@ enum class Command(val time: Float) {
     }
 
     abstract val turnOn: Boolean
-
-    //override fun toString(): String = javaClass.simpleName
+    abstract val foreground: Boolean
 
     open fun onAnimationStart(service: FilterService) {}
     open fun onAnimationCancel(service: FilterService) {}
