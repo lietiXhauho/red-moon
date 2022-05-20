@@ -51,6 +51,15 @@ Screenshots are slightly out of date.
 <img src="https://github.com/LibreShift/red-moon/blob/master/app/src/main/play/en-US/listing/phoneScreenshots/6.png" width="189" height="336" />
 <img src="https://github.com/LibreShift/red-moon/blob/master/app/src/main/play/en-US/listing/phoneScreenshots/7.png" width="189" height="336" />
 
+## Privacy Policy
+
+Red Moon collects data **only when it is necessary for functionality**. These features are all **disabled by default**. If you enable them, the data **never leaves your device**. Specifically:
+
+- If you use the "Sunrise to Sunset" feature, Red Moon will store your location (lattitude & longitude, you can see them in the preference). Used in order to calculate sunrise and sunset times.
+- If you use the excluded apps feature, then while Red Moon is running, it will monitor what app is in the foreground and which screen of that app is open (currently it polls once per second). This is checked against the list of excluded apps to determine whether Red Moon should pause, and then is immediately discarded.
+    - If you choose to exclude an app, then it's stored to the list of excluded apps, until you remove it.
+    - In the debug version of the app, these are logged to the Android system log ("logcat"). These logs are not accessible to other apps on the device. On most versions of android, they're cleared after 1-7 days.
+
 ## Development [![Build Status](https://travis-ci.org/LibreShift/red-moon.svg?branch=master)](https://travis-ci.org/LibreShift/red-moon)
 
 ### Building
