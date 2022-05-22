@@ -6,19 +6,15 @@
 package com.jmstudios.redmoon
 
 import android.app.Application
-import com.jmstudios.redmoon.helper.Logger
-
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.preference.PreferenceManager
-
+import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.receiver.ScheduleReceiver
-
 import org.json.JSONObject
 
 class RedMoonApplication: Application() {
-
     override fun onCreate() {
         Log.i("onCreate -- Initializing appContext")
         app = this

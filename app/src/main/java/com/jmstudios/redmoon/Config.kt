@@ -35,8 +35,6 @@ import com.luckycatlabs.sunrisesunset.SunriseSunsetCalculator
 import java.util.Calendar
 import java.util.TimeZone
 
-import me.smichel.android.KPreferences.Preferences
-
 private const val BROADCAST_ACTION = "com.jmstudios.redmoon.RED_MOON_TOGGLED"
 private const val BROADCAST_FIELD  = "jmstudios.bundle.key.FILTER_IS_ON"
 

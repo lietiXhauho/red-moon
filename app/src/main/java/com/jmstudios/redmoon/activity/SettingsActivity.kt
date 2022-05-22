@@ -49,6 +49,7 @@ class SettingsActivity : AppCompatActivity() {
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>,
                                             grantResults: IntArray) {
         Permission.onRequestResult(requestCode)
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
     }
     companion object : Logger()
 }
