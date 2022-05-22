@@ -21,15 +21,15 @@
     <string name="pref_title_color_temp">Cor</string>
     <string name="pref_title_turn_on">Ligar às</string>
     <string name="pref_title_turn_off">Desligar às</string>
-    <string name="pref_title_use_location">Pôr-do-sol ao nascer do sol</string>
+    <string name="pref_title_use_location">Do pôr do sol ao nascer do sol</string>
     <string name="location_not_set">Localização não definida</string>
-    <string name="latitude_short">Latititude</string>
+    <string name="latitude_short">Latitude</string>
     <string name="snackbar_searching_location">Procurando por localização</string>
     <string name="menu_dark_theme">Tema escuro</string>
     <string name="pref_title_email_developer">Envie um e-mail aos desenvolvedores</string>
     <string name="pref_summary_email_developer">Uma forma secundária de contatar-nos</string>
     <string name="pref_title_project_page">Visitar a página do projeto</string>
-    <string name="pref_summary_project_page">Ache mais informações, deixe feedback e contribua</string>
+    <string name="pref_summary_project_page">Ache mais informações, deixe comentários e contribua</string>
     <string name="toast_warning_install">Você não poderá instalar APKs enquanto o Red Moon estiver ligado.</string>
     <string name="snackbar_warning_no_location">Ativar serviços de localização para atualizar localização</string>
     <string name="help_snackbar_text">Pressione o botão para ativar Red Moon</string>
@@ -39,15 +39,14 @@
     <string name="dialog_button_ok">OK</string>
     <string name="dialog_button_cancel">Cancelar</string>
     <string name="shortcut_title_toggle">Alternar Red Moon</string>
-    <string name="slide_title_welcome">Bem-vindo!</string>
-    <string name="slide_text_welcome">Bem-vindo ao Red Moon!</string>
+    <string name="slide_title_welcome">Bem-vindo(a)!</string>
+    <string name="slide_text_welcome">Bem-vindo(a) ao Red Moon!</string>
     <string name="slide_title_protect_eyes">Protegendo seus olhos</string>
-    <string name="slide_text_protect_eyes">À noite, olhar para seu celular
-        machucam seus olhos. Você pode utilizar o Red Moon para escurecer a sua tela.</string>
+    <string name="slide_text_protect_eyes">À noite, olhar para seu celular machuca seus olhos. Você pode utilizar o Red Moon para escurecer a sua tela.</string>
     <string name="slide_title_improve_sleep">Melhorando seu sono</string>
     <string name="slide_text_improve_sleep">Luz azul suprime a produção de Melatonina, o hormônio responsável por te ajudar a adormecer de noite. O Red Moon remove a luz azul da sua tela, garantindo que adormeça mais facilmente.</string>
     <string name="slide_title_get_started">Vamos começar!</string>
-    <string name="slide_text_get_started">Ligue o Red Moon pressionando o otão no canto superior direito.</string>
+    <string name="slide_text_get_started">Ligue o Red Moon pressionando o botão no canto superior direito.</string>
     <string name="filter_name_custom">Personalizado</string>
     <string name="filter_name_default">Padrão</string>
     <string name="filter_name_bed_reading">Leitura</string>
@@ -66,8 +65,8 @@
     <string name="text_switch_on">Ligado</string>
     <string name="text_switch_off">Desligado</string>
     <string name="dialog_title_permission_usage_stats">Acesso ao uso</string>
-    <string name="dialog_message_permission_usage_stats">Permita o acesso às estatísticas de uso na próxima tela paraque o Red Moon pause em apps protegidos. 
-\n 
+    <string name="dialog_message_permission_usage_stats">Permita o acesso às estatísticas de uso na próxima tela para que o Red Moon pause em apps protegidos.
+\n
 \nO Red Moon precisa do acesso ao uso para determinar se está usando um app que não funcionará quando o Red Moon estiver ativo.</string>
     <string name="menu_about">Sobre</string>
     <string name="activity_about">Sobre o Red Moon</string>
@@ -79,12 +78,12 @@
     <string name="notification_action_turn_on">Ligar</string>
     <string name="notification_action_turn_off">Desligar</string>
     <string name="notification_action_stop">Parar</string>
-    <string name="notification_action_next_filter">Próximo fitro</string>
+    <string name="notification_action_next_filter">Próximo filtro</string>
     <string name="pref_summary_use_location">Baseado na sua localização</string>
     <string name="pref_title_integration">Integração com outros apps</string>
     <string name="pref_summary_integration">Alguns apps, como LibreTasks ou Tasker, permitem que automatize tarefas ao ocorrer certos eventos. O Red Moon envia uma notificação pública quando liga e desliga, para que esses apps possam responder. Se você não usa ou desenvolve nenhum desses apps, pode ignorar o próximo parágrafo
 \n
-\nRed Moon difunde uma intent público com a ação `com.jmstudios.redmoon.RED_MOON_TOGGLED`. Esse intent contêm um boolean extra com a chave `jmstudios.bundle.key.FILTER_IS_ON`, que indica se o filtro está ligado ou desligado.</string>
+\nRed Moon difunde uma \"intent\" público com a ação `com.jmstudios.redmoon.RED_MOON_TOGGLED`. Esse \"intent\" contêm um valor booleano extra com a chave `jmstudios.bundle.key.FILTER_IS_ON`, que indica se o filtro está ligado ou desligado.</string>
     <string name="pref_title_version">Versão</string>
     <!-- Currently unused -->
     <string name="add_new_profile_dialog_title">Insira o nome do perfil</string>
@@ -95,7 +94,7 @@
     <string name="searching_location">Procurando por localização</string>
     <string name="toast_warning_no_location">Ative os serviços de localização para atualizar sua localização</string>
     <string name="pref_category_button_backlight_disclaimer">Sem efeito em certos aparelhos</string>
-    <string name="pref_title_button_backlight">Luz de fundo do botão de hardware</string>
+    <string name="pref_title_button_backlight">Luz de fundo do botão físico</string>
     <string name="snackbar_location_updated">Localização encontrada!</string>
     <string name="pref_title_location">Localização</string>
     <string name="pref_entry_button_backlight_system">Sistema configurado</string>
@@ -110,23 +109,24 @@
     <string name="notification_action_whitelist_remove">Filtrar app</string>
     <string name="pref_category_schedule">Programar</string>
     <string name="pref_title_schedule">Rodar como programado</string>
-    <string name="pref_summary_schedule_sun" formatted="false">Pôr-do-sol (%on) ao nascer do sol (%off)</string>
-    <string name="pref_summary_schedule_custom" formatted="false">Personalizado (%on to %off)</string>
+    <string name="pref_summary_schedule_sun" formatted="false">Do pôr do sol (%on) ao nascer do sol (%off)</string>
+    <string name="pref_summary_schedule_custom" formatted="false">Personalizado (%on a %off)</string>
     <string name="pref_summary_schedule_none">Nenhum</string>
     <string name="pref_title_start_time">Horário de início</string>
     <string name="pref_title_stop_time">Horário de parada</string>
     <string name="pref_title_translators">Ajude a traduzir</string>
-    <string name="pref_summary_translators">Tradutores: smichel17, raatmarien, Mostafa Ahangarha e Marcus Vinicius Santos</string>
+    <string name="pref_summary_translators">Tradutores: smichel17, raatmarien, Mostafa Ahangarha e Marcus Vinicius Santos, larcansal e ssantos</string>
     <string name="toast_warning_secured">Alguns recursos deste app podem não funcionar enquanto o Red Moon estiver rodando.</string>
     <string name="filter_name_dim_only">Apenas escurecer</string>
-    <string name="notification_status_paused_with_info">Pausado.Limpe a notificação para parar.</string>
+    <string name="notification_status_paused_with_info">Pausado. Limpe a notificação para parar.</string>
     <string name="notification_channel_overlay_name">Controle de sobreposição</string>
     <string name="notification_channel_overlay_description">A notificação persistente de controle de sobreposição</string>
     <string name="pref_title_dark_theme">Tema escuro</string>
-    <string name="pref_summary_stop_time_sunrise">Nascer do Sol (%s)</string>
+    <string name="pref_summary_stop_time_sunrise">Nascer do sol (%s)</string>
     <string name="pref_value_stop_time_sunrise">Nascer do sol</string>
     <string name="pref_summary_start_time_sunset">Pôr do sol (%s)</string>
     <string name="pref_value_start_time_sunset">Pôr do sol</string>
     <string name="menu_settings">Configurações</string>
     <string name="activity_settings">Configurações</string>
+    <string name="pref_title_use_root">Usar root</string>
 </resources>
