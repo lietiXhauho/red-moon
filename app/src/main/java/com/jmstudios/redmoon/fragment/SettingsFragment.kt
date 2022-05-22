@@ -123,7 +123,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
         updateSecureSuspendSummary()
     }
 
-    override fun onDisplayPreferenceDialog(p: Preference?) {
+    override fun onDisplayPreferenceDialog(p: Preference) {
         if (p is TimePreference) {
             TimePreferenceDialogFragmentCompat.newInstance(p.key).let {
                 it.setTargetFragment(this, 0)

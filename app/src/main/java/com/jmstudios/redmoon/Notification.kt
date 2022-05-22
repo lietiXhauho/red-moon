@@ -5,12 +5,14 @@
  */
 package com.jmstudios.redmoon
 
+import android.annotation.SuppressLint
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
 
@@ -87,13 +89,26 @@ class Notification(
     }
 
     //region wrappers for readability
+    @SuppressLint("UnspecifiedImmutableFlag")
     private fun servicePI(code: Int, intent: Intent) =
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+            PendingIntent.getService(context, code, intent, PendingIntent.FLAG_UPDATE_CURRENT.or(PendingIntent.FLAG_IMMUTABLE))
+        else
             PendingIntent.getService(context, code, intent, PendingIntent.FLAG_UPDATE_CURRENT)
 
+
+    @SuppressLint("UnspecifiedImmutableFlag")
     private fun activityPI(code: Int, intent: Intent) =
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+            PendingIntent.getActivity(context, code, intent, PendingIntent.FLAG_UPDATE_CURRENT.or(PendingIntent.FLAG_IMMUTABLE))
+        else
             PendingIntent.getActivity(context, code, intent, PendingIntent.FLAG_UPDATE_CURRENT)
 
+    @SuppressLint("UnspecifiedImmutableFlag")
     private fun broadcastPI(code: Int, intent: Intent) =
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+            PendingIntent.getBroadcast(context, code, intent, PendingIntent.FLAG_IMMUTABLE)
+        else
             PendingIntent.getBroadcast(context, code, intent, 0)
 
     private fun NotificationCompat.Builder.addAction(icon: Int, title: Int, intent: PendingIntent) =

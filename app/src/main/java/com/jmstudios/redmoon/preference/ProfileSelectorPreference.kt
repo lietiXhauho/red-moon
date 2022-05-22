@@ -43,10 +43,10 @@ class ProfileSelectorPreference(ctx: Context, attrs: AttributeSet) : Preference(
         layoutResource = R.layout.preference_profile_selector
     }
 
-    override fun onBindViewHolder(holder: PreferenceViewHolder?) {
+    override fun onBindViewHolder(holder: PreferenceViewHolder) {
         super.onBindViewHolder(holder)
-        mProfileSpinner = holder?.findViewById(R.id.profile_spinner) as Spinner
-        mProfileActionButton = holder?.findViewById(R.id.profile_action_button) as Button
+        mProfileSpinner = holder.findViewById(R.id.profile_spinner) as Spinner
+        mProfileActionButton = holder.findViewById(R.id.profile_action_button) as Button
 
         initLayout()
     }
