@@ -1,5 +1,7 @@
 keystore.properties
 app/keystore.ks
+app/keystore.jks
+app/release
 .gradle/
 build/
 local.properties
