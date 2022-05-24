@@ -120,4 +120,12 @@
     <string name="pref_value_start_time_sunset">Napnyugta</string>
     <string name="menu_settings">Beállítások</string>
     <string name="activity_settings">Beállítások</string>
+    <string name="shortcut_title_toggle">kapcsoló Red Moon</string>
+    <string name="pref_title_use_root">Gyökér használata</string>
+    <string name="dialog_message_permission_overlay">Engedélyezze a következő képernyőn más alkalmazások fölé történő rajzolást, hogy a Red Moon bekapcsolódhasson.</string>
+    <string name="notification_channel_overlay_name">Overlay vezérlő</string>
+    <string name="notification_channel_overlay_description">A tartós overlay-ellenőrzési értesítés</string>
+    <string name="dialog_message_permission_usage_stats">A következő képernyőn engedélyezze a használathoz való hozzáférést, hogy a Red Moon szünetet tarthasson a védett alkalmazásokban.
+\n
+\nA Red Moon ezeket az adatokat csak arra használja, hogy megállapítsa, használ-e olyan alkalmazást, amely nem működik, ha a Red Moon be van kapcsolva.</string>
 </resources>
