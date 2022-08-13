@@ -8,6 +8,7 @@ package com.jmstudios.redmoon.fragment
 import android.os.Bundle
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
@@ -106,7 +107,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
             if (newValue as Boolean) {
                 val hasRoot = Shell.rootAccess()
                 if (!hasRoot) {
-                    // TODO: Show some message, "Could not get root"
+                    Toast.makeText(context, R.string.toast_root_unavailable, Toast.LENGTH_SHORT).show()
                     return@setOnPreferenceChangeListener false
                 }
             }
