@@ -17,6 +17,7 @@ import com.jmstudios.redmoon.Command
 
 import com.jmstudios.redmoon.Config
 import com.jmstudios.redmoon.EventBus
+import com.jmstudios.redmoon.filterIsOn
 import com.jmstudios.redmoon.getColor
 import com.jmstudios.redmoon.helper.Logger
 import com.jmstudios.redmoon.helper.Permission
@@ -100,6 +101,25 @@ class SettingsFragment : PreferenceFragmentCompat() {
             true
         }
 
+        rootPref.setOnPreferenceChangeListener { _, newValue ->
+            // Make sure root is available before enabling
+            if (newValue as Boolean) {
+                val hasRoot = Shell.rootAccess()
+                if (!hasRoot) {
+                    // TODO: Show some message, "Could not get root"
+                    return@setOnPreferenceChangeListener false
+                }
+            }
+            if (filterIsOn) {
+                // It would be better to toggle back on again using the new mode but it's more work
+                // to add that, since the filter service needs to restart, so we need to wait until
+                // the fade-out finishes to start again. Or maybe better, the filter service could
+                // listen for this setting changing and automatically toggle itself. But this works.
+                Command.toggle(on = false)
+            }
+            return@setOnPreferenceChangeListener true
+        }
+
         updatePrefs()
     }
 
@@ -109,7 +129,6 @@ class SettingsFragment : PreferenceFragmentCompat() {
         updatePrefs()
         EventBus.register(this)
         LocationUpdateService.update()
-        rootPref.isVisible = Shell.rootAccess()
     }
 
     override fun onStop() {
