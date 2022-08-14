@@ -127,5 +127,7 @@
     <string name="pref_value_start_time_sunset">Захід сонця</string>
     <string name="menu_settings">Налаштування</string>
     <string name="activity_settings">Налаштування</string>
-    <string name="pref_title_use_root">Використовувати root</string>
+    <string name="pref_title_use_root">Root-режим</string>
+    <string name="toast_root_unavailable">Red Moon: Root недоступний. Вимкнення root-режиму.</string>
+    <string name="pref_summary_use_root">Фільтр вищої якості, особливо з темним тлом. Потрібен пристрій, з root-доступом за допомогою Magisk.</string>
 </resources>
