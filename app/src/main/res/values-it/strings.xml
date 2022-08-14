@@ -128,5 +128,7 @@
     <string name="pref_summary_start_time_sunset">Tramonto (%s)</string>
     <string name="pref_value_stop_time_sunrise">Alba</string>
     <string name="pref_summary_stop_time_sunrise">Alba (%s)</string>
-    <string name="pref_title_use_root">Usa root</string>
+    <string name="pref_title_use_root">Modalità radice</string>
+    <string name="toast_root_unavailable">Luna Rossa: Root non disponibile. Disabilitazione della modalità root.</string>
+    <string name="pref_summary_use_root">Filtro di qualità superiore, soprattutto con sfondi scuri. Richiede un dispositivo rootato con Magisk.</string>
 </resources>
