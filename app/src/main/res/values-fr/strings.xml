@@ -132,4 +132,5 @@
     <string name="pref_summary_stop_time_sunrise">Lever du soleil (%s)</string>
     <string name="pref_title_use_root">Mode Super Utilisateur</string>
     <string name="toast_root_unavailable">Red Moon : Super utilisateur indisponible. Désactivation du mode Super utilisateur.</string>
+    <string name="pref_summary_use_root">Filtre de meilleure qualité, surtout avec les fonds noir. L\'appareil doit être débridé avec Magisk.</string>
 </resources>
