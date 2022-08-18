@@ -31,7 +31,7 @@
     <string name="pref_summary_use_location">בהתבסס על המיקום שלך</string>
     <string name="pref_title_location">מיקום</string>
     <string name="pref_title_dark_theme">ערכת נושא כהה</string>
-    <string name="pref_title_use_root">השתמש בשורש</string>
+    <string name="pref_title_use_root">מצב שורש</string>
     <string name="button_add_filter">הוסף</string>
     <string name="button_remove_filter">מחק</string>
     <string name="text_switch_on">דלוק</string>
@@ -128,4 +128,6 @@
     <string name="action_next_profile">הפרופיל הבא</string>
     <string name="searching_location">מחפש מיקום</string>
     <string name="notification_channel_overlay_description">הודעת בקרת שכבת-על המתמשכת</string>
+    <string name="toast_root_unavailable">Red Moon: השורש אינו זמין. השבתת מצב שורש.</string>
+    <string name="pref_summary_use_root">מסנן באיכות גבוהה יותר, במיוחד עם רקע כהה. דורש מכשיר מושרש עם Magisk.</string>
 </resources>

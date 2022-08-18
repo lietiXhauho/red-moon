@@ -128,5 +128,7 @@
     <string name="pref_summary_start_time_sunset">日落(%s)</string>
     <string name="pref_value_stop_time_sunrise">日出</string>
     <string name="pref_summary_stop_time_sunrise">日出(%s)</string>
-    <string name="pref_title_use_root">使用 root</string>
+    <string name="pref_title_use_root">Root 模式</string>
+    <string name="toast_root_unavailable">Red Moon：Root 不可用。 禁用 root 模式。</string>
+    <string name="pref_summary_use_root">更高质量的滤镜，尤其是深色背景。 需要安装了 Magisk 的已 root 设备。</string>
 </resources>

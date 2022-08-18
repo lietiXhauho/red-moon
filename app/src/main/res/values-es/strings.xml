@@ -133,4 +133,6 @@
     <string name="menu_settings">Ajustes</string>
     <string name="activity_settings">Ajustes</string>
     <string name="pref_title_use_root">Modo superusuario («root»)</string>
+    <string name="toast_root_unavailable">Red Moon: El modo superusuario no está disponible; desactivando la funcionalidad.</string>
+    <string name="pref_summary_use_root">Un filtro con colores mejorados, sobre todo sobre fondos oscuros. Es necesario tener privilegios de superusuario con Magisk para poder usarlo.</string>
 </resources>

@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">ଲାଲ ଚନ୍ଦ୍ର</string>
+    <string name="activity_main">ଲାଲ ଚନ୍ଦ୍ର</string>
+    <string name="activity_shortcut">ଲାଲ୍ ଚନ୍ଦ୍ର ଟୋଗଲ୍</string>
+    <string name="activity_intro">ଇଣ୍ଟ୍ରୋ</string>
+    <string name="activity_settings">ସେଟିଂସମୂହ</string>
+    <string name="activity_about">ଲାଲ ଚନ୍ଦ୍ର ବିଷୟରେ</string>
+    <string name="activity_schedule">କାର୍ଯ୍ୟସୂଚୀ</string>
+    <string name="activity_timer">ଟାଇମର୍</string>
+    <string name="menu_restore_default_filters">ଡିଫଲ୍ଟ ଫିଲ୍ଟରଗୁଡିକ ପୁନରୁଦ୍ଧାର କରନ୍ତୁ</string>
+    <string name="activity_secure_suspend">ବାଦ ଦିଆଯାଇଥିବା ଆପଗୁଡ଼ିକରେ ବିରାମ ଦିଅନ୍ତୁ</string>
+    <string name="menu_show_intro">ଇଣ୍ଟ୍ରୋ ରିପ୍ଲେ କରନ୍ତୁ</string>
+    <string name="menu_settings">ସେଟିଂସମୂହ</string>
+    <string name="menu_about">ବିଷୟରେ</string>
+    <string name="notification_status_running">ଚାଲୁଛି | Apks ସଂସ୍ଥାପନ କରିବାକୁ ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="notification_status_running_no_warning">ଚାଲୁଛି</string>
+    <string name="notification_status_paused">ବିରତ</string>
+</resources>
